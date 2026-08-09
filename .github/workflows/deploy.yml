@@ -17,6 +17,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      VITE_APP_BASE: '/natural-blackstrap-molasses/'
 
     steps:
       - name: Checkout
