@@ -94,15 +94,16 @@ export default function Contact() {
             </div>
 
             <div className="overflow-hidden rounded-3xl shadow-card">
-              <div
-                role="img"
-                aria-label="Map placeholder showing our business location in Lagos, Nigeria"
-                className="grid h-48 w-full place-items-center bg-accent text-primary/60 dark:bg-white/5"
-              >
-                <div className="text-center">
-                  <FiMapPin size={28} className="mx-auto" />
-                  <p className="mt-2 text-sm">Map placeholder — 12 Harvest Lane, Lagos</p>
-                </div>
+              <div className="h-72 w-full bg-accent text-primary/60 dark:bg-white/5 sm:h-96">
+                <iframe
+                  title="Natural Blackstrap Molasses location"
+                  src="https://www.google.com/maps/embed?pb=!4v1786236262979!6m8!1m7!1sefqaBwUwr-CmGec7unmg2w!2m2!1d6.47185551621109!2d3.14085716912667!3f180!4f0!5f0.7820865974627469"
+                  className="h-full w-full"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                />
               </div>
             </div>
           </div>
