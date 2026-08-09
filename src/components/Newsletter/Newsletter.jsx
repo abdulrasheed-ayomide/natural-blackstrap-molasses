@@ -1,15 +1,18 @@
 import { useState } from 'react';
 import { FiSend } from 'react-icons/fi';
 import { toast } from 'react-toastify';
+import { useLocalStorage } from '../../hooks/useLocalStorage.js';
 
 export default function Newsletter({ variant = 'section' }) {
   const [email, setEmail] = useState('');
+  const [subscriberCount, setSubscriberCount] = useLocalStorage('newsletter_subscribers', 300);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!email.trim()) return;
     toast.success("You're subscribed! Thank you for joining us.");
     setEmail('');
+    setSubscriberCount((count) => count + 1);
   };
 
   const isFooter = variant === 'footer';
@@ -23,6 +26,9 @@ export default function Newsletter({ variant = 'section' }) {
         <p className={`mt-1 text-sm ${isFooter ? 'text-cream/70' : 'text-bark/70 dark:text-cream/70'}`}>
           Recipes, natural health tips and early access to new sizes.
         </p>
+        {isFooter && (
+          <p className="mt-2 text-sm text-cream/70">{subscriberCount} subscribers</p>
+        )}
       </div>
       <form onSubmit={handleSubmit} className="mt-4 flex w-full max-w-md gap-2 sm:mt-0" noValidate>
         <label htmlFor="newsletter-email" className="sr-only">

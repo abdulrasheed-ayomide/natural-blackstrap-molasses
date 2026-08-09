@@ -68,13 +68,13 @@ export default function Contact() {
                 </li>
                 <li className="flex items-start gap-3">
                   <FiMail className="mt-0.5 shrink-0 text-primary dark:text-secondary" />
-                  <a href="mailto:hello@naturalblackstrapmolasses.com" className="break-all text-bark/75 hover:text-primary dark:text-cream/75">
-                    hello@naturalblackstrapmolasses.com
+                  <a href="mailto:ayomiderasheed226@gmail.com" className="break-all text-bark/75 hover:text-primary dark:text-cream/75">
+                    ayomiderasheed226@gmail.com
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
                   <FiMapPin className="mt-0.5 shrink-0 text-primary dark:text-secondary" />
-                  <span className="text-bark/75 dark:text-cream/75">12 Harvest Lane, Lagos, Nigeria</span>
+                  <span className="text-bark/75 dark:text-cream/75">Ilogbo, Ojo, Lagos, Nigeria</span>
                 </li>
               </ul>
             </div>
