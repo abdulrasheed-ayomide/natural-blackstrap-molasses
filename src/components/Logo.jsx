@@ -29,11 +29,8 @@ export default function Logo({ className = '' }) {
         />
       </svg>
       <span className="flex flex-col leading-tight">
-        <span className="font-display font-bold text-primary text-base xs:text-lg tracking-tight">
+        <span className="font-display font-bold text-secondary text-base xs:text-lg tracking-tight">
           Natural Blackstrap
-        </span>
-        <span className="font-label text-[10px] xs:text-xs uppercase tracking-[0.18em] text-secondary">
-          Pure Goodness from Nature
         </span>
       </span>
     </Link>

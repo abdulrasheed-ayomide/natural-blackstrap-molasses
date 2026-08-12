@@ -40,18 +40,18 @@ export default function ProductCard({ product }) {
 
         <p className="mt-2 line-clamp-2 text-sm text-bark/70 dark:text-cream/70">{product.description}</p>
 
-        <div className="mt-4 flex items-center justify-between gap-3 pt-2">
+        <div className="mt-4 flex flex-col gap-3 pt-2 sm:flex-row sm:items-center sm:justify-between">
           <span className="font-display text-lg font-bold text-primary dark:text-secondary">
             {formatCurrency(product.price)}
           </span>
           <button
             type="button"
             onClick={() => addItem(product, 1)}
-            className="btn-primary !py-2 !px-4 text-xs"
+            className="btn-primary w-full sm:w-auto sm:min-w-[145px] px-5 py-3 text-sm"
             aria-label={`Add ${product.name} ${product.weight} to cart`}
           >
-            <FiShoppingCart size={15} />
-            Add
+            <FiShoppingCart size={16} />
+            Add to cart
           </button>
         </div>
       </div>

@@ -69,7 +69,7 @@ export default function Products() {
               initial="hidden"
               animate="show"
               viewport={revealViewport}
-              className="grid grid-cols-1 gap-6 xs:grid-cols-2 lg:grid-cols-3"
+              className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
             >
               {filtered.map((p) => (
                 <motion.div key={p.id} variants={fadeUp}>

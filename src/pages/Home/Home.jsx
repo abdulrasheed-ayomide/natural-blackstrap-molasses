@@ -75,7 +75,7 @@ export default function Home() {
             initial="hidden"
             whileInView="show"
             viewport={revealViewport}
-            className="mt-10 grid grid-cols-1 gap-6 xs:grid-cols-2 lg:grid-cols-3"
+            className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
           >
             {featured.map((p) => (
               <motion.div key={p.id} variants={fadeUp}>
@@ -101,7 +101,7 @@ export default function Home() {
           initial="hidden"
           whileInView="show"
           viewport={revealViewport}
-          className="mt-10 grid grid-cols-1 gap-5 xs:grid-cols-2 lg:grid-cols-4"
+          className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4"
         >
           {benefits.slice(0, 4).map((b) => (
             <BenefitCard key={b.id} benefit={b} />
