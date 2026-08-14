@@ -19,7 +19,7 @@ export default function Hero() {
           <span className="section-eyebrow inline-block">Slow-Simmered &middot; Unsulphured &middot; Unrefined</span>
           <h1 className="mt-4 font-display text-4xl font-bold leading-[1.1] text-bark dark:text-cream xs:text-5xl lg:text-6xl">
             100% Natural
-            <span className="block text-primary">Blackstrap Molasses</span>
+            <span className="block text-secondary">Blackstrap Molasses</span>
           </h1>
           <p className="mx-auto mt-5 max-w-md text-base font-medium leading-relaxed text-bark/80 dark:text-cream/80 lg:mx-0 xs:text-lg">
             Rich in Iron, Calcium, Magnesium, Potassium and other essential minerals — the way nature intended,
@@ -31,7 +31,7 @@ export default function Hero() {
               Shop Now
               <FiArrowRight />
             </Link>
-            <Link to="/benefits" className="btn-secondary w-full xs:w-auto">
+            <Link to="/benefits" className="btn-primary w-full xs:w-auto">
               Learn More
             </Link>
           </div>
